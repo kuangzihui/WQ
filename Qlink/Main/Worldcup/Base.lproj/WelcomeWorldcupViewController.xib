@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+        <array key="VAGRounded-Bold.ttf">
+            <string>VAGRoundedBT-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeWorldcupViewController">
+            <connections>
+                <outlet property="lblDesc1" destination="xj8-VQ-y7o" id="jZL-f2-q8Q"/>
+                <outlet property="lblDesc2" destination="AGG-W7-dTF" id="eT3-Pu-IJP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_world_cup_two" translatesAutoresizingMaskIntoConstraints="NO" id="Ftq-8X-d0l">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_world_cup_two" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-iC-wpb">
+                    <rect key="frame" x="301" y="326" width="74" height="341"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-D0-TDi">
+                    <rect key="frame" x="69" y="374" width="237" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="7bp-MU-Hsk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VAGRoundedBT-Regular" family="VAGRounded BT" pointSize="13"/>
+                    <state key="normal" title="START RLAYING" backgroundImage="bg_continue">
+                        <color key="titleColor" red="0.32156862749999998" green="0.0" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickStartPlay:" destination="-1" eventType="touchUpInside" id="qm3-cS-XKl"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_purple_box" translatesAutoresizingMaskIntoConstraints="NO" id="M2E-gP-w2r">
+                    <rect key="frame" x="17" y="166" width="341" height="7"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="7" id="rtn-li-x9M"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ball" translatesAutoresizingMaskIntoConstraints="NO" id="dD6-dZ-J0d">
+                    <rect key="frame" x="175.5" y="52" width="24" height="24"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQR-eD-lBi">
+                    <rect key="frame" x="135.5" y="99" width="105" height="21"/>
+                    <fontDescription key="fontDescription" name="VAGRoundedBT-Regular" family="VAGRounded BT" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINQ'S WORLDCUP GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8K-Sc-1UE">
+                    <rect key="frame" x="84" y="125" width="207" height="21"/>
+                    <fontDescription key="fontDescription" name="VAGRoundedBT-Regular" family="VAGRounded BT" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xj8-VQ-y7o">
+                    <rect key="frame" x="30" y="205" width="315" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="evr-u4-Hm6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGG-W7-dTF">
+                    <rect key="frame" x="30" y="251" width="315" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="efY-Dc-ZB0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARE YOU READY ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uM9-vz-H4t">
+                    <rect key="frame" x="119" y="312" width="138.5" height="21"/>
+                    <fontDescription key="fontDescription" name="VAGRoundedBT-Regular" family="VAGRounded BT" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbh-s1-9jP">
+                    <rect key="frame" x="69" y="433" width="237" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="N20-yD-4xO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VAGRoundedBT-Regular" family="VAGRounded BT" pointSize="13"/>
+                    <state key="normal" title="BACK" backgroundImage="bg_gray_button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBack:" destination="-1" eventType="touchUpInside" id="TVc-he-QBW"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_little_star" translatesAutoresizingMaskIntoConstraints="NO" id="0jR-NR-KRD">
+                    <rect key="frame" x="20" y="304" width="43" height="60"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ftq-8X-d0l" secondAttribute="trailing" id="0Li-t1-DFD"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="AGG-W7-dTF" secondAttribute="trailing" constant="30" id="2O3-Bz-NPz"/>
+                <constraint firstItem="sQR-eD-lBi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="47e-eI-1rc"/>
+                <constraint firstItem="yfh-D0-TDi" firstAttribute="top" secondItem="0jR-NR-KRD" secondAttribute="bottom" constant="10" id="8l3-o7-waZ"/>
+                <constraint firstItem="Ftq-8X-d0l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9MW-Yl-Rpu"/>
+                <constraint firstItem="lbh-s1-9jP" firstAttribute="top" secondItem="yfh-D0-TDi" secondAttribute="bottom" constant="14" id="9my-zM-wU2"/>
+                <constraint firstItem="0jR-NR-KRD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Exq-uI-m06"/>
+                <constraint firstItem="AGG-W7-dTF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="F2g-pr-3ZY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="yfh-D0-TDi" secondAttribute="trailing" constant="69" id="Nkp-wf-aDi"/>
+                <constraint firstItem="lbh-s1-9jP" firstAttribute="trailing" secondItem="yfh-D0-TDi" secondAttribute="trailing" id="OhF-jq-Im8"/>
+                <constraint firstItem="sQR-eD-lBi" firstAttribute="top" secondItem="dD6-dZ-J0d" secondAttribute="bottom" constant="23" id="Oye-bV-4Xc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xj8-VQ-y7o" secondAttribute="trailing" constant="30" id="Q7l-8m-YIZ"/>
+                <constraint firstItem="dD6-dZ-J0d" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="32" id="Sxy-Hi-APA"/>
+                <constraint firstItem="AGG-W7-dTF" firstAttribute="top" secondItem="xj8-VQ-y7o" secondAttribute="bottom" constant="28" id="U7L-3k-GxF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="M2E-gP-w2r" secondAttribute="trailing" constant="17" id="WkG-S6-bff"/>
+                <constraint firstAttribute="bottom" secondItem="Ftq-8X-d0l" secondAttribute="bottom" id="X4M-6j-aNO"/>
+                <constraint firstItem="yfh-D0-TDi" firstAttribute="top" secondItem="uM9-vz-H4t" secondAttribute="bottom" constant="41" id="ZnY-Lo-T7S"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2RC-iC-wpb" secondAttribute="trailing" id="ada-oD-Yo0"/>
+                <constraint firstItem="lbh-s1-9jP" firstAttribute="leading" secondItem="yfh-D0-TDi" secondAttribute="leading" id="bld-fh-r7V"/>
+                <constraint firstItem="uM9-vz-H4t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eHq-gx-zVb"/>
+                <constraint firstAttribute="bottom" secondItem="2RC-iC-wpb" secondAttribute="bottom" id="ei9-8Q-51e"/>
+                <constraint firstItem="uM9-vz-H4t" firstAttribute="top" secondItem="AGG-W7-dTF" secondAttribute="bottom" constant="43" id="j6C-TD-9Iq"/>
+                <constraint firstItem="M2E-gP-w2r" firstAttribute="top" secondItem="m8K-Sc-1UE" secondAttribute="bottom" constant="20" id="kCe-CR-LHT"/>
+                <constraint firstItem="xj8-VQ-y7o" firstAttribute="top" secondItem="M2E-gP-w2r" secondAttribute="bottom" constant="32" id="mjX-od-nCP"/>
+                <constraint firstItem="M2E-gP-w2r" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="17" id="nCe-og-fhu"/>
+                <constraint firstItem="dD6-dZ-J0d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nCv-gg-Gie"/>
+                <constraint firstItem="m8K-Sc-1UE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="phe-lL-JAV"/>
+                <constraint firstItem="yfh-D0-TDi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="69" id="qvl-Vn-wOW"/>
+                <constraint firstItem="m8K-Sc-1UE" firstAttribute="top" secondItem="sQR-eD-lBi" secondAttribute="bottom" constant="5" id="rc1-kG-lTv"/>
+                <constraint firstItem="Ftq-8X-d0l" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="zHa-vt-tqo"/>
+                <constraint firstItem="xj8-VQ-y7o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="zqM-om-eWx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-21.5" y="-270.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_continue" width="8" height="44"/>
+        <image name="bg_gray_button" width="9" height="44"/>
+        <image name="bg_purple_box" width="339" height="7"/>
+        <image name="bg_world_cup_two" width="340" height="604"/>
+        <image name="icon_ball" width="24" height="24"/>
+        <image name="img_little_star" width="43" height="60"/>
+        <image name="img_world_cup_two" width="74" height="341"/>
+    </resources>
+</document>
